@@ -150,7 +150,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="iocp_handler.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="server.cpp" />
     <ClCompile Include="simplestMMORPG.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">simplestMMORPG.h</PrecompiledHeaderFile>
@@ -163,6 +167,15 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="client.h" />
+    <ClInclude Include="database.h" />
+    <ClInclude Include="event.h" />
+    <ClInclude Include="id_table_def.h" />
+    <ClInclude Include="iocp_handler.h" />
+    <ClInclude Include="memory_pool.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="protocol.h" />
+    <ClInclude Include="server.h" />
     <ClInclude Include="simplestMMORPG.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

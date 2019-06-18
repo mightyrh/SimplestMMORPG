@@ -1,13 +1,25 @@
 #include "simplestMMORPG.h"
+#include "server.h"
 
+
+/************************************************************************
+/*
+HandleDiagnosticRecord : display error/warning information
+/*
+/* Parameters:
+/*
+hHandle ODBC handle
+/*
+hType Type of handle (SQL_HANDLE_STMT, SQL_HANDLE_ENV, SQL_HANDLE_DBC)
+/*
+RetCode Return code of failing command
+/************************************************************************/
 
 int main()
 {
-	tbb::concurrent_priority_queue<int> testObj;
-	int i;
-	testObj.push(101);
-	testObj.try_pop(i);
-	std::cout << i << std::endl;
+	setlocale(LC_ALL, "");
+	std::wcout.imbue(std::locale("korean"));
+	Server server;
 
 	system("pause");
 }

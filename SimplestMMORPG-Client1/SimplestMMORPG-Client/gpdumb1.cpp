@@ -2,14 +2,7 @@
  
 // INCLUDES ///////////////////////////////////////////////
 
-#define WIN32_LEAN_AND_MEAN  
-
-#include <windows.h>   // include important windows stuff
-#include <windowsx.h> 
-#include <stdio.h>
-
-#include <d3d9.h>  // directX includes
-#include <d3dx9tex.h>  // directX includes
+#include "common.h"
 #include "gpdumb1.h"
 
 #pragma comment (lib, "d3d9.lib")
@@ -622,7 +615,7 @@ int DD_Init(int width, int height, int bpp)
 	D3DXCreateFont(g_pd3dDevice, 20, 0, FW_BOLD,
 		0, FALSE, DEFAULT_CHARSET, OUT_DEFAULT_PRECIS, 
 		DEFAULT_QUALITY, DEFAULT_PITCH | FF_DONTCARE,
-		TEXT("±¼¸²"), &g_pFont);
+		TEXT("êµ´ë¦¼"), &g_pFont);
 
 
 // set globals
